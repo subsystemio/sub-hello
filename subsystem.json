@@ -1,9 +1,12 @@
 {
-	"name": "World",
-	"version": "0.1",
-	"hash": {
-		"source": "123",
-		"build": "123"
-	},
-	"limit": 1
+  "name": "Hello",
+  "version": "0.1",
+  "repository": {
+    "url": "github.com/subsystemio/subsystem"
+  },
+  "hash": {
+    "source": "123",
+    "build": "123"
+  },
+  "limit": 1
 }
