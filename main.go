@@ -9,5 +9,5 @@ func main() {
 
 	s.Register("http://localhost:8080/v1")
 
-	s.StartHeartbeat()
+	s.Serve()
 }
