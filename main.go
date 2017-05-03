@@ -5,9 +5,9 @@ import (
 )
 
 func main() {
-	s := SubSystem.New()
+	s := SubSystem.New("localhost:8081")
 
-	s.Register("http://localhost:8080/v1")
-
-	s.Serve()
+	enc := json.NewEncoder(s.Body.Manager.Connection)
+	enc.Encode(Message{Action: "Token", Data: "Test"})
+	s.Body.Manager.Connection.Close()
 }
